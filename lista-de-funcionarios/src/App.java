@@ -11,7 +11,7 @@ public class App {
         
         Scanner sc = new Scanner(System.in);
 
-        Funcionarios funcionarios;
+        //Funcionarios funcionarios;
 
         System.out.printf("Quantos funcionários deseja adicionar? ");
         int numFuncionarios = sc.nextInt();
@@ -53,9 +53,9 @@ public class App {
             listaDeFuncionarios.add(new Funcionarios(id, nome, salario));
         }
 
-        for (Funcionarios pessoas : listaDeFuncionarios) 
+        for (Funcionarios funcionario : listaDeFuncionarios) 
         {
-            System.out.println(pessoas.ToString());
+            System.out.println(funcionario.ToString());
         }
 
         System.out.printf("\nSelecione a ID do funcionário que receberá aumento: ");
