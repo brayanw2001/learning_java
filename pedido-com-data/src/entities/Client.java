@@ -44,8 +44,6 @@ public class Client {
 
     public String toString()
     {
-        return "Nome: " + name
-            + "\nemail: " + email
-            + "\nData de nascimento: " + formatter.format(birthDate);
+        return name + " (" + formatter.format(birthDate) + ") - " + email;
     }
 }
